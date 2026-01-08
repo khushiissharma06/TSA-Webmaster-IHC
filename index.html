@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+
+    <body>
+        <nav id="navBar">
+            <a href="#signInPage"><button id="signInBtn">Sign In</button></a>
+            <a href="#logInPage"><button id="logInBtn">Log In</button></a>
+            <p id="helloMsg"></p>
+            <a href="#logOutConfirmation"><button id="logOutBtn"></button></a>
+            <div id="dropdown">
+                <button><img src="images/menu.png"></button>
+                <br>
+                <div id="dropdownContent">
+                    <a id="homeNavBtn" href="#homePage">Home</a>
+                    <a id="imagesNavBtn" href="#imagesPage">Images</a>
+                    <a id="communityHubNavBtn" href="#communityHubPage">Community Hub</a>
+                    <a id="resourcesNavBtn" href="#resourcesPage">Resources</a>
+                    <a id="monthlyHighlightsNavBtn" href="#monthlyHighlightsPage">Monthtly Highlights</a>
+                    <a id="feedbackNavBtn" href="#feedbackPage">Feedback</a>
+                </div>
+            </div>
+        </nav>
+
+        <section id="homePage" class="show page">
+            <h1>Welcome to the Forsyth County Community Resource Hub!</h1>
+            <br>
+            <br>
+            <br>
+            <a href="#imagesPage" id="imageBtnHome">
+                <div id="imagesContainer" class="container">
+                    <img src="images/gallery.png">
+                    <h2>Images</h2>
+                </div>
+            </a>
+            
+            <br>
+            <br>
+            <a href="#communityHubPage" id="communityHubBtnHome">
+                <div id="communityContainer" class="container">
+                    <img src="images/community.png">
+                    <h2>Forsyth County Hub</h2>
+                </div>
+            </a>
+            <br><br>
+            <img src="images/flowers.png" id="flowers">
+        </section>
+
+
+        <section id="imagesPage" class="hide page">
+            <h1>Images</h1><br>
+            <div class="imagesContainer">
+                <img src="images/restaurant.jpeg">
+                <img src="images/food.webp">
+                <img src="images/park.jpg">
+            </div>
+        </section>
+
+
+        <section id="communityHubPage" class="hide page">
+            <h1> Forsyth County Community Hub</h1>
+            <br>
+            <h2 id="pagesTitle">Pages</h2>
+            <br>
+            <div id="imagePyramid">
+                <div id="topRow">
+                    <a href="#resourcesPage" id="resourcesBtnHub"class="imageCard">
+                        <img src="images/resource-management.png">
+                        <span>Resources</span>
+                    </a>
+                    <a href="#feedbackPage" id="feedbackBtnHub" class="imageCard">
+                        <img src="images/feedback-loop.png">
+                        <span>Feedback Form</span>
+                    </a>
+                </div>
+
+                <a href="#imagesPage" id="imagesBtnHub" class="imageCard">
+                    <img src="images/star.png">
+                    <span>Monthly Highlights</span>
+                </a>
+        </section>
+
+
+        <section id="resourcesPage" class="hide page">
+            <h1>Resources</h1>
+            <div class="resourcesContainer">
+                <img src="images/job.png">
+                <div class="infoCont">            
+                    <h2 class="resourceTitle">Forsyth County Job Fair</h2>
+                    <div>
+                        <h3>1234 Street, City, State, ZIP Code</h3>
+                        <br>
+                        <p>Come visit the County Building to learn more about job opportunities within the county!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resourcesContainer">
+                <img src="images/house.png">
+                <div class="infoCont">            
+                    <h2 class="resourceTitle" style="font-size: 22px;">Forsyth County Homeless Shelter</h2>
+                    <div>
+                        <h3>1234 Street, City, State, ZIP Code</h3>
+                        <br>
+                        <p>The Forsyth County Homeless Shelter is a great place to go when you need assistance! We'll help you get back on your feet!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resourcesContainer">
+                <img src="images/grocery.png">
+                <div class="infoCont">            
+                    <h2 class="resourceTitle">Forsyth County Food Pantry</h2>
+                    <div>
+                        <h3>1234 Street, City, State, ZIP Code</h3>
+                        <br>
+                        <p>The Forsyth County Food Pantry is a great resource that provides food assistance to individuals and families!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="monthlyHighlightsPage" class="hide page">
+            <h1>Monthly Highlights</h1><br>
+            <p style="text-align: center;">Top Three Resources of the Month</p>
+            <div class="resourcesContainer">
+                <img src="images/job.png">
+                <div class="infoCont">            
+                    <h2 class="resourceTitle">Forsyth County Job Fair</h2>
+                    <div>
+                        <h3>1234 Street, City, State, ZIP Code</h3>
+                        <br>
+                        <p>Come visit the County Building to learn more about job opportunities within the county!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resourcesContainer">
+                <img src="images/house.png">
+                <div class="infoCont">            
+                    <h2 class="resourceTitle" style="font-size: 22px;">Forsyth County Homeless Shelter</h2>
+                    <div>
+                        <h3>1234 Street, City, State, ZIP Code</h3>
+                        <br>
+                        <p>The Forsyth County Homeless Shelter is a great place to go when you need assistance! We'll help you get back on your feet!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resourcesContainer">
+                <img src="images/grocery.png">
+                <div class="infoCont">            
+                    <h2 class="resourceTitle">Forsyth County Food Pantry</h2>
+                    <div>
+                        <h3>1234 Street, City, State, ZIP Code</h3>
+                        <br>
+                        <p>The Forsyth County Food Pantry is a great resource that provides food assistance to individuals and families!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="feedbackPage" class="hide page">
+            <div class="formContainer">
+                <h1>Feedback Form</h1><br>
+                <p>Please enter any feedback you have for us.</a></p>
+                <br>
+                <form class="form">
+                    <div class="formdata">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email" name="email" placeholder="firstlast@website.com" required>
+                    </div>
+                    <div class="formdata">
+                        <label for="password">FEEDBACK</label>
+                        <input type="password" id="password" name="password" placeholder="*****" required>
+                    </div>
+                    <br>
+                    <a href="#formSubmittedPage" class="formSubBtn">
+                        <button type="submit" class="sign-up-button" style="display: block; margin: 0 auto; color: white;">Log in</button>
+                    </a>
+                </form>
+            </div>
+        </section>
+
+
+        <section id="signInPage" class="hide page">
+            <div class="formContainer">
+                <h1> Create New Account </h1><br>
+                <p>Already Registered? <a href="#logInPage" style="text-decoration: underline; color: #0000a7;">Log in here.</a></p>
+                <br>
+                <form id="signInForm" class="form" onsubmit="return false;">
+                    <div class="formdata">
+                        <label for="signInName">NAME</label>
+                        <input type="text" id="userName" name="name" placeholder="First Last" required>
+                    </div>
+                    <div class="formdata">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="userEmail" name="email" placeholder="firstlast@website.com" required>
+                    </div>
+                    <div class="formdata">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="userPassword" name="password" placeholder="*****" required>
+                    </div>
+                    <div class="formdata">
+                        <label for="dob">DATE OF BIRTH</label>
+                        <input type="text" id="userBirthday" name="dob" placeholder="mm/dd/yyyy" required>
+                    </div>
+                    <br>
+                    <a href="#formSubmittedPage" class="formSubBtn">
+                        <button id="signInSubmit" type="submit" class="sign-up-button" style="display: block; margin: 0 auto; color: white;">Sign up</button>
+                    </a>
+                </form>
+            </div>
+        </section>
+
+
+        <section id="logInPage" class="hide page">
+            <div class="formContainer">
+                <h1>Log In</h1><br>
+                <p>Don't have an account? <a href="#signInPage" style="text-decoration: underline; color: #0000a7;">Sign in here.</a></p>
+                <br>
+                <form class="form">
+                    <div class="formdata">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email" name="email" placeholder="firstlast@website.com" required>
+                    </div>
+                    <div class="formdata">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" id="password" name="password" placeholder="*****" required>
+                    </div>
+                    <br>
+                    <a href="#formSubmittedPage" class="formSubBtn">
+                        <button type="submit" class="sign-up-button" style="display: block; margin: 0 auto; color: white;">Log in</button>
+                    </a>
+                </form>
+            </div>
+        </section>
+
+        <section id="formSubmittedPage" class="hide page">
+            <h1 style="font-size: 50px; text-align: center;">Thank you!</h1>
+            <br>
+            <br>
+            <a href="#homePage"><button id="returnHome">Return Home</button></a>
+        </section>
+
+
+        <script src="main.js"></script>
+    </body>
+</html>

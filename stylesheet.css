@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+/*
+COLOR PALETTE
+
+black: 01030a
+prussian blue: 060e29
+imperial blue : 001c64
+navy: 0000a7
+light navy: 1427b6
+wisteria blue: 76a1d1
+mustard: ffd351 (pls no mustard jokes)
+alice blue: dbecff
+silver: cecece
+white: ffffff
+
+*/
+/*------------------------------------------ GENERAL -----------------------------------*/
+
+* {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    color: #01030a;
+    margin: 0;
+}
+
+body{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+button {
+    padding: 7.5px;
+    border-radius: 7.5px;
+    background-color: #0017c3;
+    text-align: center;
+    border: none;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #263dec
+}
+
+h1 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 10px;
+    color: #0000a7;
+    font-weight: 550;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+/*------------------------------------------------------------------------------- DROPDOWN ------------------------------------------------------*/
+#navBar {
+    background-color: #19191de2;
+    width: 100%;
+    padding: 10px 0;
+    height: 40px;
+}
+
+#navBar a {
+    margin-right: 10px;
+    z-index: 10000;
+    float: right;
+}
+
+#navBar a button {
+    padding: 5px 13.5px;
+    display: inline-block;
+    margin: auto 0;
+    transition: 0.3s;
+    font-size: 17px;
+
+}
+#dropdown {
+    position: relative;
+    width: 200px;
+}
+
+#dropdown button{
+    height: 35px;
+    width: 35px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#dropdown button img {
+    height: 16px;
+    width: 16px;
+}
+
+#dropdownContent{
+    display: none;
+    position: absolute;
+    box-shadow: 2px 2px 5px (0,0,0, 0.4);
+}
+
+#dropdown button, #dropdownContent{
+    margin-left: 5px;
+}
+
+#dropdown:hover #dropdownContent, #dropdownContent a{ 
+    display: block;
+    text-decoration: none;
+    color: #0000a7;
+    float: none;
+}
+
+#dropdownContent a {
+    padding: 5px 7.5px;
+    background-color: aliceblue;
+}
+
+#dropdownContent a:hover {
+    background-color: #5564d6;
+    color: white;
+}
+
+
+/*------------------------------------------ HOME PAGE -------------------------------------*/
+
+.container {
+    display: block;
+    margin: 0 auto;
+    height: 175px;
+    padding: 10px;
+    width: 500px;
+    transition: 0.3s;
+    border-radius: 15px;
+    position: relative;
+}
+
+.container:hover {
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.25);
+}
+
+.container img {
+    display: block;
+    height: 150px;
+    float: left;
+    margin: auto 0;
+}
+
+.container h2{
+    position: absolute;
+    left: 175px;
+    top: 45%;
+    transform: translate(0, -50%);
+}
+
+#flowers{
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*---------------------------------- COMMUNITY HUB -----------------------------*/
+#pagesTitle {
+    background-color: #acd1fb;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 5px;
+    margin: 0 auto;
+    width: 350px;
+}
+
+#imagePyramid{
+    display:flex;
+    flex-direction:column;
+    align-items:center; 
+    margin-top:20px;
+}
+
+#topRow{
+    display: flex;
+    margin: 0 auto;
+}
+
+.imageCard{
+    transition: 0.3s;
+    height: 190px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.imageCard:hover {
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.25);
+}
+.imageCard img{
+    height:150px;
+    border-radius:10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.imageCard span {
+    display: block;
+    margin: 10px 0 auto;
+    text-align: center;
+}
+/*----------------------------------- RESOURCES PAGE ----------------------------*/
+
+.resourcesContainer {
+    display: flex;
+    margin: 10px auto;
+    background-color: aliceblue;
+    border-radius: 15px;
+    width: 550px;
+    transition: 0.3s;
+    height: 170px;
+    padding: 15px;
+    gap: 15px;
+}
+
+.resourcesContainer:hover {
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.25);
+
+}
+
+.resourcesContainer img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.resourcesContainer .infoCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infoCont h2 {
+    background-color: #0000a7;
+    color: white;
+    border-radius: 5px;
+    padding: 6px 10px;
+    margin: 0 0 6px 0;
+}
+
+.infoContent h3 {
+    margin: 0 0 6px;
+}
+
+.infoCont p {
+    margin: 0;
+}
+
+.infoCont div{
+    background-color: #76a1d1;
+    border-radius: 10px;
+    padding: 5px;
+}
+.resourcesContainer .infoCont h3, .resourcesContainer .infoCont p {
+    color:#01030a;
+}
+
+/*------------------------------------- FORMS (LOG IN, SIGN IN, ETC.) ---------------------------------*/
+
+.formContainer {
+    display: block;
+    margin: 0 auto;
+    width: 475px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.25);
+}
+
+.formContainer .form a .sign-up-button {
+    color: white;
+    display: block;
+    margin: 0 auto;
+    
+}
+
+/*----------------------------------- IMAGES ----------------------------*/
+
+.imagesContainer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.imagesContainer img {
+    height: 300px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.imagesContainer img:hover {
+    box-shadow: 0px 5px 12px rgba(0,0,0,0.25);
+
+}
