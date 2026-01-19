@@ -21,6 +21,7 @@
                     <a id="resourcesNavBtn" href="#resourcesPage">Resources</a>
                     <a id="monthlyHighlightsNavBtn" href="#monthlyHighlightsPage">Monthtly Highlights</a>
                     <a id="feedbackNavBtn" href="#feedbackPage">Feedback</a>
+                    <a id="calendarNavBtn" href="#calendarPage">Calendar</a>
                 </div>
             </div>
         </nav>
@@ -77,7 +78,7 @@
                     </a>
                 </div>
 
-                <a href="#imagesPage" id="imagesBtnHub" class="imageCard">
+                <a href="#monthlyHighlightsPage" id="monthlyHighlightsBtnHub" class="imageCard">
                     <img src="images/star.png">
                     <span>Monthly Highlights</span>
                 </a>
@@ -246,6 +247,29 @@
             <br>
             <br>
             <a href="#homePage"><button id="returnHome">Return Home</button></a>
+        </section>
+
+        <section id="calendarPage" class="hide page">
+            <a href="communityHub.html">
+                <button class="backbutton">Back</button>
+            </a>
+
+            <div class="calendar-wrapper">
+                <div id="calendar">
+                    <div class="header">
+                        <span class="arrow" onclick="changeMonth(-1)">←</span>
+                        <span id="monthYear"></span>
+                        <span class="arrow" onclick="changeMonth(1)">→</span>
+                    </div>
+
+                    <div class="weekdays">
+                        <div>Sun</div><div>Mon</div><div>Tue</div>
+                        <div>Wed</div><div>Thu</div><div>Fri</div><div>Sat</div>
+                    </div>
+
+                    <div class="days" id="days"></div>
+                </div>
+            </div>
         </section>
 
 
